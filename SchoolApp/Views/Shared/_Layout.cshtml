@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html class="no-js">
+<head>
+    @*<base href="/" />*@
+    <meta charset="utf-8" />
+    <title>Mankeytech School App</title>
+    <meta name="description" content="The School Management System" />
+    <meta name="author" content="MankeyTech (Pty) Ltd">
+
+    <!-- FlatKitUI Assets Libraries CSS Files -->
+    @Html.Partial("_LayoutCssPartial")
+
+    <!-- JQuery Files -->
+    <!-- MY SCRIPTS - BEGIN = -->
+
+    @Scripts.Render("~/bundles/FlatKitUI_jquery")
+
+    <!-- END === -->
+    @*@Scripts.Render("~/bundles/modernizr")*@
+
+</head>
+<!-- AngularJs Application Bootstrap -->
+<body id="mainApplicationElemNode">
+    <div>
+        <!-- ############ LAYOUT START -->
+        <!-- ASIDE -->
+        <div id="aside" class="app-aside modal fade nav-dropdown">
+            <!-- FLUID APP ASIDE -->
+            <div class="left navside dark dk" layout="column">
+                <div class="navbar no-radius">
+                    <!-- brand -->
+                    @Html.Partial("_LayoutHeaderPartial")
+                </div>
+
+                <!-- NAVIGATION : This navigation is also responsive-->
+                @Html.Partial("_LayoutNavigMenuPartial")
+
+                <!-- USER STATUS -->
+                @Html.Partial("_LayoutUserStatusPartial")
+            </div>
+        </div>
+        <!-- / -->
+        <!-- CONTENT -->
+        <div id="content" class="app-content box-shadow-z0" role="main">
+
+            <!-- NAVBAR ON TOP -->
+            @Html.Partial("_LayoutNavBarPartial")
+
+
+            <!-- FOOTER -->
+            @Html.Partial("_LayoutFooterPartial")
+
+            <!-- ############ PAGE BODY START -->
+                @RenderBody()   
+            <!-- ############ PAGE BODY END-->
+        </div>
+        <!-- / -->
+        <!-- THEME SWITHER -->
+        @Html.Partial("_LayoutThemeSwitherPartial")
+        <!-- / -->
+        <!-- ############ LAYOUT END-->
+    </div>
+    <!-- build:js ~/Scripts/app.html.js -->
+    @Html.Partial("_LayoutJSPartial")
+    <!-- endbuild -->
+</body>
+</html>

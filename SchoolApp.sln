@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataAccessLayer", "DataAccessLayer", "{55ACB541-3292-4D10-839B-624367801024}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ProjectLibraries", "ProjectLibraries", "{65CCED64-3F95-4F6E-B47E-BD572E5DBD69}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Uitilities", "Uitilities", "{D9DDAA07-6B52-4B50-B6D8-7AABC5D06465}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BusinessLogic", "BusinessLogic", "{250D9A1E-B96A-4727-9E70-2859508247F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MySchool_DB1.DataAccess", "MySchool_DB1.DataAccess\MySchool_DB1.DataAccess.csproj", "{7E68C488-6825-4706-9E7C-FAFFAE070FB6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebApp", "WebApp", "{DF893838-CFBD-4D22-B01F-317627E8B07D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolApp", "SchoolApp\SchoolApp.csproj", "{DC394BB2-D5B5-44A7-A970-211A27AF821A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7E68C488-6825-4706-9E7C-FAFFAE070FB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E68C488-6825-4706-9E7C-FAFFAE070FB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E68C488-6825-4706-9E7C-FAFFAE070FB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E68C488-6825-4706-9E7C-FAFFAE070FB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC394BB2-D5B5-44A7-A970-211A27AF821A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC394BB2-D5B5-44A7-A970-211A27AF821A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC394BB2-D5B5-44A7-A970-211A27AF821A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC394BB2-D5B5-44A7-A970-211A27AF821A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{55ACB541-3292-4D10-839B-624367801024} = {65CCED64-3F95-4F6E-B47E-BD572E5DBD69}
+		{D9DDAA07-6B52-4B50-B6D8-7AABC5D06465} = {65CCED64-3F95-4F6E-B47E-BD572E5DBD69}
+		{250D9A1E-B96A-4727-9E70-2859508247F6} = {65CCED64-3F95-4F6E-B47E-BD572E5DBD69}
+		{7E68C488-6825-4706-9E7C-FAFFAE070FB6} = {55ACB541-3292-4D10-839B-624367801024}
+		{DC394BB2-D5B5-44A7-A970-211A27AF821A} = {DF893838-CFBD-4D22-B01F-317627E8B07D}
+	EndGlobalSection
+EndGlobal
